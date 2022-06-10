@@ -1,2 +1,2 @@
 # Vehicle_Parking-System
-This is a simple vehicle parking system
+This is a simple vehicle parking system using Java FX
