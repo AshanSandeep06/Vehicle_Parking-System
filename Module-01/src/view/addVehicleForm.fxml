@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addVehicleContext" prefHeight="335.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <Label layoutX="50.0" layoutY="75.0" text="Vehicle Number">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="148.0" text="Maximum Weight">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="225.0" text="No of passengers">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleNumber" layoutX="195.0" layoutY="75.0" onKeyReleased="#checkingVehicleNo" prefHeight="31.0" prefWidth="198.0" />
+      <TextField fx:id="txtMaximumWeight" layoutX="195.0" layoutY="146.0" onKeyReleased="#checkingWeight" prefHeight="31.0" prefWidth="198.0" />
+      <TextField fx:id="txtNoOfPassengers" layoutX="195.0" layoutY="223.0" onKeyReleased="#checkingPassengers" prefHeight="31.0" prefWidth="198.0" />
+      <Label layoutX="416.0" layoutY="75.0" text="Vehicle Type">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cbxVehicleType" layoutX="579.0" layoutY="66.0" prefHeight="31.0" prefWidth="165.0" />
+      <JFXButton layoutX="598.0" layoutY="274.0" onAction="#addVehicleOnAction" prefHeight="33.0" prefWidth="127.0" style="-fx-background-color: #40739e#40739e;" text="Add Vehicle" textFill="WHITE" />
+      <Label fx:id="vehicleLabel1" layoutX="276.0" layoutY="80.0" prefHeight="21.0" prefWidth="108.0" />
+      <Label fx:id="vehicleLabel2" layoutX="276.0" layoutY="151.0" prefHeight="21.0" prefWidth="108.0" />
+      <Label fx:id="vehicleLabel3" layoutX="257.0" layoutY="228.0" prefHeight="21.0" prefWidth="127.0" />
+   </children>
+</AnchorPane>
