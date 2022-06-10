@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addDriverContext" prefHeight="335.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <Label layoutX="71.0" layoutY="26.0" text="Driver Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDriverName" layoutX="206.0" layoutY="24.0" onKeyReleased="#checkingDriverName" prefHeight="31.0" prefWidth="538.0" />
+      <Label layoutX="147.0" layoutY="74.0" text="NIC">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNIC" layoutX="206.0" layoutY="72.0" onKeyReleased="#checkingNIC" prefHeight="31.0" prefWidth="538.0" />
+      <Label layoutX="20.0" layoutY="127.0" text="Driving Liscene No">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLicenseNO" layoutX="206.0" layoutY="125.0" onKeyReleased="#checkingDrivingLicense" prefHeight="31.0" prefWidth="538.0" />
+      <Label layoutX="113.0" layoutY="180.0" text="Address">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="206.0" layoutY="178.0" prefHeight="31.0" prefWidth="538.0" />
+      <Label layoutX="83.0" layoutY="232.0" text="Contact No">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtContactNumber" layoutX="206.0" layoutY="230.0" onKeyReleased="#checkingContactNo" prefHeight="31.0" prefWidth="538.0" />
+      <JFXButton layoutX="617.0" layoutY="280.0" onAction="#addDriverOnAction" prefHeight="33.0" prefWidth="127.0" style="-fx-background-color: #40739e#40739e;" text="Add Driver" textFill="WHITE" />
+      <Label fx:id="driverLabel1" layoutX="511.0" layoutY="29.0" prefHeight="21.0" prefWidth="219.0" />
+      <Label fx:id="driverLabel2" layoutX="511.0" layoutY="77.0" prefHeight="21.0" prefWidth="219.0" />
+      <Label fx:id="driverLabel3" layoutX="511.0" layoutY="130.0" prefHeight="21.0" prefWidth="219.0" />
+      <Label fx:id="driverLabel4" layoutX="511.0" layoutY="235.0" prefHeight="21.0" prefWidth="219.0" />
+   </children>
+</AnchorPane>
